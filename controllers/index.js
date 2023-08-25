@@ -4,7 +4,6 @@ const getWaterLevelController = require('./water_level');
 
 const controllers = (app) => {
     const waterLevelRoutes = getWaterLevelController(app).private;
-
     routes.use('/water-level', waterLevelRoutes);
 
     return routes;
