@@ -6,14 +6,16 @@ const encryptionUtils = require('./encryption');
 const eventLogHandler = require('./eventLogHandler');
 const requestHandler = require('./requestHandler');
 const cacheUtils = require('./cacheUtils');
+const dbUtils = require('./db');
 
 module.exports = {
-    eventLogHandler: eventLogHandler(),
-    globalReponseHandler: responseHandlerUtil(),
-    globalRequestInterceptor: requestHandler(),
-    globalErrorHandler: erroreHandlerUtil(),
-    errors: errorUtil,
-    date: dateUtils,
-    encryption: encryptionUtils,
-    cache: cacheUtils,
-  }
+  eventLogHandler: eventLogHandler(),
+  globalReponseHandler: responseHandlerUtil(),
+  globalRequestInterceptor: requestHandler(),
+  globalErrorHandler: erroreHandlerUtil(),
+  errors: errorUtil,
+  date: dateUtils,
+  encryption: encryptionUtils,
+  cache: cacheUtils,
+  db: dbUtils
+}
