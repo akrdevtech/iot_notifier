@@ -9,6 +9,9 @@ const waterLevelService = (app) => {
   const findWaterLevel = async (userId) => {
     const userData = await userService.getUser(userId);
     const data = await waterLevelRepo.getWaterLevel(userId);
+    if (!userData || !data) {
+      return null;
+    }
     const waterMaxPercent = ((userData.tankMax - data.waterLevel) / userData.tankMax) * 100;
     // return { ...data, waterLevelHeight: data.waterLevel, waterLevel: waterMaxPercent };
     const response = data;
