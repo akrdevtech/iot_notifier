@@ -8,7 +8,8 @@ const WaterLevelSchema = new Schema(
     waterLevel: { type: String, required: true },
     batteryLevel: { type: String, required: true },
     batteryLevelWarning: { type: Boolean, required: false, default: false },
-    waterLevelWarning: { type: Boolean, required: false, default: false }
+    waterLevelWarning: { type: Boolean, required: false, default: false },
+    waterOverflowWarning: { type: Boolean, required: false, default: false },
   },
   {
     collection: 'WaterLevel',

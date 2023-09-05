@@ -1,5 +1,4 @@
 const express = require('express');
-const { checkSchema } = require('express-validator');
 const routes = express.Router();
 const getWaterLevelServices = require('./services');
 

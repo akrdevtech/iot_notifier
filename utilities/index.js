@@ -7,6 +7,7 @@ const eventLogHandler = require('./eventLogHandler');
 const requestHandler = require('./requestHandler');
 const cacheUtils = require('./cacheUtils');
 const dbUtils = require('./db');
+const pushNotifications = require('./pushNotification');
 
 module.exports = {
   eventLogHandler: eventLogHandler(),
@@ -17,5 +18,6 @@ module.exports = {
   date: dateUtils,
   encryption: encryptionUtils,
   cache: cacheUtils,
-  db: dbUtils
+  db: dbUtils,
+  notifications: pushNotifications,
 }

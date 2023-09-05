@@ -1,16 +1,18 @@
 
 const serviceAccountConfig = {
     "type": "service_account",
-    "project_id": "ace-career-tracker",
-    "private_key_id": "a7076d158e4d15ce51a49feb0f1a8fcef800f60c",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDLbm0NETX7M790\n/R6/xL9htum1lHCqxhlyVsVpvL3WwMZfMUwZrUQhmHn8wzI4mpqgN24HsQESP8Sa\nSZZAbHJnCTN8YEyxbJIV5EcSbyquR5n78pUyMhT5jHFlfxVOP2tsUJpVNPfN+phe\nQBmruDNQE3z67mL+8BTf+mcYNcJqohDiZIXQWSu647V7jZdr02H6YnL6GhzU0I81\niy95Bjqt54GrciQ2wJor9I3dZUz331G/C2ejyuwzzjzWE8TIhANnwLg4M9DwHYkI\nFEspwCYh6teQJH0nghldwAcA9zy2+19jLQIVeNSRW4Me5aFddKKTQ7WG8feVsno8\n1AQ0/uppAgMBAAECggEAEa2uueI7QfGBC5pck/c113jFDhPQh7Kv7u0F+lad274E\nbyzSS2/wegftX+8Zm+wpkE9I10/FQ0/51pua/E3AUl5tFDutJoUEG/VqzLoO6DbO\nNaQi3YoXIwmWqCaXVCW0QOUvSETSXRrQJ26kHHVlNin/ZDIXtcZo1f8Fewfe9ZOo\nkBQ+/igL38PS8JQtAvnQ8ApdfUdOv9+XDcvfLRpYk4AaiGyAgbJ7p8MKQmAV5Hzw\nw8tF3MGdYqgJzV96gp9oNGs6EU67I+kf3RhMBGZ851MDnY5IM5ssKShsApcW/GA1\ntVgcljTkxlnX2fDqrw2HkaMlDHvr4rXHAzAoSNDR1QKBgQD7oe/8tDjF1ihqMM+o\nIyAso38zhg/8aH3lFYQZcDhZPBc/mUWX8u7FYC9lUhCXnQmFnwMfOUqlYktWKS4a\nFPHAIe0lJO8H+l0QNeDB7riNeghMpXUvsyh6SiW8HgiQ24C9M04+M74GICl+dfpn\nfI23WWoNx6g08+It2pfa2UKDLQKBgQDO9lG4AhCvzKExC7HZs4fkVc537/mg+4R7\nvfkhYqWB+m4evUBLksNaUcSM9FzpM3d4X4ttje8JpA8w6fLgRAhDe5ylg6ywTHWP\n53dwV4+wwd6cvHVlTivCurX8OU9a02P5n3/soCkAZI8n/SGh039Wg3UBIp39n2mr\nCccL1rx5rQKBgEGdM1fgoqEru7Qc8Dj2l9Ar/eIwhgCaOqG+n4iGk5rpKWLDE7uQ\ndCRxdUplQMBYCYCXOxgsN0OywtQ/vq68YWFpN04lOFMLPLMaaXYISoVRmdJqnokG\nnXpt1TMdXbxwEDzFoRRlJ5qvTkKUfuv3NXjmztmzAzBzm7m7Mze0yTwtAoGAPcqf\nRXAgaUyQR+N0+0m15f+UgIy+nEjcGlHzAvu/7JnHrRfWDXpJJztIkskWwG2kWuUz\n7Ma2ussn2fPPlxPY38UVVPmGYrDBXPC/4WPTO/P2Mhe2eUOonyA924uE3NpGfC4Z\n9J0xALQFZewW0Yki+MKQ+YDLaQDifLWTnz5C0ZUCgYASsuaxGtK/g+Hn9M3Vyc0C\nQ5IhDT6XLEIKX1M7wr2cl6q4KILoXIa62UzcdPHaqdFaAIpc6p1vNhdWp0aOWR/p\nQ77B4ih3/Mtm325XMF82TTGeUbsPuX6srObXHE2AB90jzQO02zjdOrv9r6CKA0Do\n7rf8Euu8RQaDV+WOx76TSA==\n-----END PRIVATE KEY-----\n",
-    "client_email": "firebase-adminsdk-95tpy@ace-career-tracker.iam.gserviceaccount.com",
-    "client_id": "107603204448253870812",
+    "project_id": "akr-iot-notifications",
+    "private_key_id": "ed44598e6232dee222ff58a56f47476c84625f94",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDmVAYueivO1+oa\nLjVXO/3ciLMgFETbLJE1vXMIL7rYygts7AWM4eMag0OasUMSmtq7ES+PPnrUWAnF\nB6Cd8HSrZ2mBwhx3v8A9rd5A4GnUaE6mnzqSy5RJoDrp7IpBFceowesXwKM4PXFb\nR9UfTTL/kF5YiS/rDT30xrGCEe85GIJjQgjwBTFNLfoduAxatCmR3afEWo7fKJOr\nYlreXPBxTX6oZ9TYhRUl8/AwpagI1rSAO1Hx2AVL8dEc//ooZDOSdzT+PEOAAGln\nJwCQZo/InBrXK+Oki7voqRxI3jYBlZPavd+CdNJC9s7XZk7dc6R5wbHtmM6G+cVs\nQHA2TmbJAgMBAAECggEACBuCTbHDd8ASJ5qDimbsUk5WBs2r2E6u7FY3Nb0vXajs\nAskij2FWpATllO0DLEUa6K2Lz+YePvn72w2ADfssMindVQHTDHSJlOo5Oe2kUAOd\nbCBL+KWVmktbc4c93RliCirMRo1jeWvxQOosAnJuVoBbj9CBaSvRx9tUHXzZ37ev\n67wgPZAXAVF1IvxxrPWnGEzY63Sjrz8gZ7Gh6SGMuWHP/S9t5E0/5T0ns2Tp8o1X\noHrwVvtDDLJ6MRnQSlh6bUQ/nxeCKoDMIyzeTe0NxgskWPaZqy+EcrHGqe+lbMox\nDlD3oRY8ULb9OTtF+3MGE5JkSCkpTylRUTtDnewtAQKBgQD1Tldqzf+vZKFHrSCK\nVEzCdt62QfBg80Ir7mNf1cIbNRck+5CWhLOtrfo8B4AknbW9iC5OswI2Z6RDai0C\nT3WbCS2iu0BsxP+UIRykWnIh10SXcNiacWUnbpxPeCwiFfxwc+Ig9QFKItcAih/y\nUxp/2cb2qdvblp5WU/UlTQcbyQKBgQDwXocbES+2DElz3xHrp2cT4ZZ62Jeihlbj\nDH1oj+YTGJ0gERX9bKVzdHlibIWejhg4OgfYPQ/tODkXZJ2TG7GgtQvwPtXpu7b6\npYuv67rXGzOnSaULVB3eIA3XoBjI1y4fTw1a67zP8bQybh+C3uGGjDO7cGkujQXH\ngcO6h2xzAQKBgFHMw/3Ln71/EwDxzG4UWlxmgzHHnz7VH3XC0sR8ZXPpKkSc1sQ6\nkCgUYeNupN6Q8K+5H6gCrXQy72XDnCqvEIqYbu1a/8rFjmx49jIgLvr169uMN86Y\njaCuk9U0P5NGPZ3KJtfSm5F7OLLnXGvUJnwHxP8v+S6qdTZYXOEJZJtxAoGANRFZ\nmMM5mmKqENft9+4UltIWS/bnu20XX7dRNLWYYRztC7hZ94J2IMBVUEKPWYsbk8ZU\nFwycKI5iJGUFWQYjOEzgXuEwjxLvefT0mxlbPcR2qfdbZd3jXjgLdlCVSDohp63n\nT+x92hcN5phjgpw8hF0NytMtlaZy4TIoCVV+vwECgYEAu7XzXm+70y3sOTFX3YOK\nFi9dbcOpix61+Xo7et1RVuNyZ8ShF989RZlgG7HiZVMx8RBdC8vOz0oQoN3hrpQf\ny5/8lpwC6CHfl8K9hMQ40ydtcdrEgbMPRJCUhtDrjdistlJsT66/vt9ffSlUrsP0\nBVCG6wXx1NqGmSELsKWP/JA=\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-rsudr@akr-iot-notifications.iam.gserviceaccount.com",
+    "client_id": "111403164598316596683",
     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
     "token_uri": "https://oauth2.googleapis.com/token",
     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-95tpy%40ace-career-tracker.iam.gserviceaccount.com"
-}
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-rsudr%40akr-iot-notifications.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  
 
 const firestoreConfig = {
     "databaseURL": "https://ace-career-tracker.asia-south1.firebaseio.com"
