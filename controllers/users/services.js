@@ -12,9 +12,14 @@ const userService = (app) => {
     return userRepo.upsertUser(userId, data)
   };
 
+  const updateUser = async (userId, data) => {
+    return userRepo.updateUser(userId, data)
+  };
+
   return {
     getUser,
-    upsertUser
+    upsertUser,
+    updateUser
   }
 }
 

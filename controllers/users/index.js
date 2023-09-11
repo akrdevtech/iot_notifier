@@ -37,9 +37,20 @@ const controllers = (app) => {
             next(error)
         }
     }
+    const updateUser = async (req, res, next) => {
+        try {
+            const { id } = req.params;
+            const updateParams = req.body;
+            const response = await userServices.updateUser(id, updateParams);
+            return req.sendResponse(response, res, next);
+        } catch (error) {
+            next(error)
+        }
+    }
 
     routes.get('/:id', getUser);
     routes.post('/:id', upsertUser);
+    routes.patch('/:id', updateUser);
 
     return { public: routes, private: routes };
 }

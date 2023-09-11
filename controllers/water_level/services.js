@@ -1,5 +1,6 @@
 const waterLevelRepository = require('./repositories');
 const getUserService = require('../users/services');
+const { prettyStringfify } = require('../../utilities/formatters');
 
 /* GET home page. */
 const waterLevelService = (app) => {
@@ -15,9 +16,12 @@ const waterLevelService = (app) => {
     const waterMaxPercent = ((userData.tankMax - data.waterLevel) / userData.tankMax) * 100;
     // return { ...data, waterLevelHeight: data.waterLevel, waterLevel: waterMaxPercent };
     const response = data;
-    response.waterLevelHeight = data.waterLevel;
-    response.waterLevel = waterMaxPercent;
-    return response;
+    return {
+      ...response._doc,
+      waterLevelHeight: data.waterLevel,
+      waterLevel: waterMaxPercent,
+      motorStatus: userData.motorStatus,
+    };
   };
 
   const upsertWaterLevel = async (userId, data) => {
@@ -35,11 +39,11 @@ const waterLevelService = (app) => {
     data.batteryLevelWarning = false;
     data.waterOverflowWarning = false;
 
-    const { tankHeight, tankMax } = userData;
+    const { tankHeight, tankMax, motorStatus } = userData;
     const waterMinPercent = ((tankHeight - waterLevel) / tankHeight) * 100;
     const waterMaxPercent = ((tankMax - waterLevel) / tankMax) * 100;
 
-    console.log({ waterLevel, tankHeight, tankMax, waterMinPercent, waterMaxPercent });
+    console.log({ waterLevel, tankHeight, tankMax, waterMinPercent, waterMaxPercent, motorStatus });
 
     try {
       if (Number(waterMinPercent) < 25) {
@@ -69,7 +73,8 @@ const waterLevelService = (app) => {
     } catch (error) {
       console.log(error)
     }
-    return waterLevelRepo.upsertWaterLevel(userId, data)
+    const responseData = await waterLevelRepo.upsertWaterLevel(userId, data)
+    return { ...responseData, motorStatus }
   };
 
   return {

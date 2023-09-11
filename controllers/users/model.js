@@ -8,6 +8,7 @@ const UserSchema = new Schema(
     notificationKey: { type: String, required: false },
     firsName: { type: String, required: true },
     lastName: { type: String, required: false },
+    motorStatus:{ type: Boolean, required: false, default: false },
     tankHeight:{ type: Number, required: false, default: 0 },
     tankMax:{ type: Number, required: false, default: 0 },
   },

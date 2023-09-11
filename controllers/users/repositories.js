@@ -23,9 +23,20 @@ const usersRepository = (app) => {
         }
     };
 
+    const updateUser = async (userId, data) => {
+        try {
+            const response = await Users.updateOne({ userId }, { $set: { ...data } });
+            return response;
+        } catch (err) {
+            logger.error(`Error while updating user details in db: ${err}`);
+            throw new MicroserviceError(ErrorCodes.SYSTEM_ERROR);
+        }
+    };
+
     return {
-         getUser,
-        upsertUser
+        getUser,
+        upsertUser,
+        updateUser
     }
 }
 
