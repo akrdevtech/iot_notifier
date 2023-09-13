@@ -44,9 +44,10 @@ const waterLevelService = (app) => {
     const waterMaxPercent = ((tankMax - waterLevel) / tankMax) * 100;
 
     console.log({ waterLevel, tankHeight, tankMax, waterMinPercent, waterMaxPercent, motorStatus });
+    const { minAlertAt, maxAlertAt } = userData;
 
     try {
-      if (Number(waterMinPercent) < 25) {
+      if (Number(waterMinPercent) < (minAlertAt || 25)) {
         data.waterLevelWarning = true;
         if (!currentValues.waterLevelWarning && userData?.notificationKey) {
           console.log("water level warning")
@@ -54,7 +55,7 @@ const waterLevelService = (app) => {
             .sendPushNotification(userData.notificationKey, "Critical Water Level", "Water level has dropped below 25%, please switch on the pump")
         }
       }
-      if (Number(waterMaxPercent) > 95) {
+      if (Number(waterMaxPercent) > (maxAlertAt || 95)) {
         data.waterOverflowWarning = true;
         if (!currentValues.waterOverflowWarning && userData?.notificationKey) {
           console.log("water level warning")
@@ -62,7 +63,7 @@ const waterLevelService = (app) => {
             .sendPushNotification(userData.notificationKey, "Critical Water Level", "Water level has exceeded 95%, please switch off the pump")
         }
       }
-      if (Number(batteryLevel) < 25) {
+      if (Number(batteryLevel) < (minAlertAt || 25)) {
         data.batteryLevelWarning = true;
         if (!currentValues.batteryLevelWarning) {
           console.log("battery level warning")
