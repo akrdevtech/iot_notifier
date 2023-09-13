@@ -51,7 +51,7 @@ const waterLevelService = (app) => {
         if (!currentValues.waterLevelWarning && userData?.notificationKey) {
           console.log("water level warning")
           app.utilities.notifications
-            .sendPushNotification(notificationKey, "Critical Water Level", "Water level has dropped below 25%, please switch on the pump")
+            .sendPushNotification(userData.notificationKey, "Critical Water Level", "Water level has dropped below 25%, please switch on the pump")
         }
       }
       if (Number(waterMaxPercent) > 95) {
@@ -59,7 +59,7 @@ const waterLevelService = (app) => {
         if (!currentValues.waterOverflowWarning && userData?.notificationKey) {
           console.log("water level warning")
           app.utilities.notifications
-            .sendPushNotification(notificationKey, "Critical Water Level", "Water level has exceeded 95%, please switch off the pump")
+            .sendPushNotification(userData.notificationKey, "Critical Water Level", "Water level has exceeded 95%, please switch off the pump")
         }
       }
       if (Number(batteryLevel) < 25) {
@@ -67,7 +67,7 @@ const waterLevelService = (app) => {
         if (!currentValues.batteryLevelWarning) {
           console.log("battery level warning")
           app.utilities.notifications
-            .sendPushNotification(notificationKey, "Critical Battery Level", "Battery level has dropped below 25%, please recharge")
+            .sendPushNotification(userData.notificationKey, "Critical Battery Level", "Battery level has dropped below 25%, please recharge")
         }
       }
     } catch (error) {
